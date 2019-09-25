@@ -6,3 +6,5 @@ There are 3 exercises that go with the first sections of Google's Python class. 
 <li>list1.py -- complete the list functions in list1.py, based on the material in the Python Lists and Python Sorting sections (additional exercises available in list2.py)</li>
 <li>wordcount.py -- this larger, summary exercise in wordcount.py combines all the basic Python material in the above sections plus Python Dicts and Files (a second exercise is available in mimic.py)</li>
 </ul>
+
+<sup>Source : https://developers.google.com/edu/python/exercises/basic </sup>
