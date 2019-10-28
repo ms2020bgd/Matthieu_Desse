@@ -27,14 +27,19 @@ def array_front9(nums):
 
 # Given a list of ints, return the list of their square root.
 def list_sqrt(nums):
-    return
+    return [i**(1/2) for i in nums]
 
 
 # Write a function which return a dict containing the number of time each letter
 # is present in the given text.
 def occurences(text):
-    return
-
+    dict = {}
+    for i in text:
+        if i in dict:
+            dict[i]+=1
+        else:
+            dict[i]=1
+    return dict
 
 # Write a function that maps a list of words into a list of
 # integers representing the lengths of the corresponding words.
@@ -44,7 +49,7 @@ def length_words(words):
 
 # Write a function that takes a number and returns a list of its digits.
 def number_to_digits(number):
-    return
+    return [int(i) for i in str(number)]
 
 
 # Write a function that translates a text from english to Pig Latin.
@@ -106,7 +111,17 @@ weather_data = {
 # - date (str): the date
 # - temp (float): the temperature in °celsius (not °kelvin)
 def extract_data(data):
-    return
+    records = []
+    for city_name, city_data in data.items():
+        for weather in city_data['weather_list']:
+            d = {
+                'name': city_name,
+                'country': city_data['metadata']['country'],
+                'date': weather['dt_txt'],
+                'temp': weather['main']['temp'] - 273.15
+            }
+            records.append(d)
+    return records
 
 
 # End of exercices.
