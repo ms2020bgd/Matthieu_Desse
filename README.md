@@ -4,4 +4,4 @@
 <li>Basics</li>
 <li> Git & co </li>
 </ul>
-<h2>Lecture 1 : intro to Python </h2>
+<h2>Lecture 2 : Basics </h2>
